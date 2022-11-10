@@ -12,10 +12,17 @@ saudacoes('Paola'); //Chamo saudacoes e acrescento algum nome*/
 const variavel = saudacoes('Yuri');
 console.log(variavel);*/
 
-function soma(x, y){
+/*function soma(x = 1, y = 1){ //Declaro valores para x e y caso não tenha um valor inserido posteriormente
     const resultado = x + y;
     return resultado;
 }
 
 
-console.log(soma(2, 2));
+console.log(soma(2, 2));*/
+
+const raiz = function (n){
+    return n ** 0.5;
+};
+
+console.log(raiz(9));
+console.log(raiz(25));
