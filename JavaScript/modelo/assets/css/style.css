@@ -60,3 +60,22 @@ form button:hover{
     background-color: var(--primary-color-darker);
     transition: all 0.5s ease-in;
 }
+
+h1{
+    margin-bottom: 30px;
+}
+
+table{
+    width: 500px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+td{
+    height: 30px;
+}
+
+.paragrafo-resultado{
+    background-color: rgb(19, 114, 198);
+    padding: 10px 20px;
+    color: #fff;
+}
