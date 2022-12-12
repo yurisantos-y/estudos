@@ -74,8 +74,12 @@ td{
     height: 30px;
 }
 
-.paragrafo-resultado{
+.paragrafo-resultado, .bad{
     background-color: rgb(19, 114, 198);
     padding: 10px 20px;
     color: #fff;
+}
+
+.bad{
+    background-color: rgb(198, 19, 19);
 }
