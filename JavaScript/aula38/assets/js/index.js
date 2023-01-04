@@ -8,3 +8,12 @@ for (let p of ps) {
     p.style.backgroundColor = backgroundColorBody;
     p.style.color = "#FFF";
 }
+
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "Volte :(";
+});
+
+window.addEventListener("focus", () =>{
+    document.title = docTitle;
+})
