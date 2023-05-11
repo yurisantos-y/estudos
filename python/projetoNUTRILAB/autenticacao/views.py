@@ -35,7 +35,7 @@ def cadastro(request):
             ativacao.save()
 
             path_template = os.path.join(settings.BASE_DIR, 'autenticacao/templates/emails/cadastro_confirmado.html')
-            email_html(path_template, 'Cadastro confirmado', [email,], username=username)
+            email_html(path_template, 'Cadastro confirmado', [email,], username=username, link_ativacao=f"127.0.0.1:8000/auth/ativar_conta/{token}")
             messages.add_message(request, constants.SUCCESS, 'Usuário cadastrado com sucesso')
             return redirect ('/auth/logar')
         except:
