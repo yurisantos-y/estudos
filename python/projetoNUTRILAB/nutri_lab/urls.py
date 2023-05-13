@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include ('autenticacao.urls')), #Quando acessar o link auth ela ira acessar o autenticacao e dentro dela terá urls.py
+    path('', include('plataforma.urls')),
 ]
